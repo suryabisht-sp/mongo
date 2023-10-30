@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/bootstrap.css" >
+     <link rel="stylesheet" href='css/all.css' >
+   
+    <title>Mongo Db</title>
+  </head>
+  <body>
+    <%- include("./partials/Header.ejs") %>
+   
+    <div class="container">
+<div class="row">
+<div class="col-sm-6 mt-5">
+<h2 class="alert alert-success text-center">Update Record</h2>  
+<form method="post">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" id="name" name="name" class="form-control"/>
+  </div>
+    <div class="mb-3">
+    <label for="age" class="form-label">Age</label>
+    <input type="text" id="age" name="age" class="form-control"/>
+  </div>
+  <div class="mb-3">
+    <label for="name" class="form-label">Fee</label>
+    <input type="text" id="fees" name="fees" class="form-control"/>
+  </div>
+  <button class="btn btn-primary">Update</button>
+   <button class="btn btn-primary">Back</button>
+</form>
+</div>
+</div>  
+    </div>
+     <%- include("./partials/footer.ejs") %>
+    <script src="javascripts/bootstrap.bundle.js"></script>
+    <script src="javascripts/all.js"></script>
+    
+  </body>
+</html>
